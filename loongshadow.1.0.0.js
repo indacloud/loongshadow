@@ -1,7 +1,7 @@
 /*
 *	Plugin : LoongShadow
-*	Version : 0.0.1
-*	Date : 2013/07/28
+*	Version : 1.0.0
+*	Date : 2013/07/29
 *	Author : InDaCloud / Tom Brehm
 *	Site : http://loongshadow.indacloud.fr
 *	Git : https://github.com/indacloud/loongshadow
