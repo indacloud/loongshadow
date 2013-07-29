@@ -3,13 +3,12 @@ LoongShadow
 
 A jQuery plugin to create long shadows on elements
 
+
+<strong>See the DEMO : </strong><a href="http://loongshadow.indacloud.fr">http://loongshadow.indacloud.fr</a>
+
 ===========
 
-See the DEMO : <a href="http://loongshadow.indacloud.fr">http://loongshadow.indacloud.fr</a>
-
-===========
-
-Installation :
+<h3>Installation :</h3>
 
 You only need a recent version of jQuery and the plugiin file.
 
@@ -37,7 +36,7 @@ $(document).ready(function(){
 
 ============
 
-Options :
+<h3>Options :</h3>
 
 <table>
 	<tr>
@@ -73,5 +72,44 @@ Options :
 	<tr>
 		<td>fadeTime</td>
 		<td>(int) Duration of the fadeIn en millisecons when fadeIn is set to true.</td>
+		<td>300</td>
 	</tr>
 </table>
+
+============
+
+<h3>Methods</h3>
+
+<table>
+	<tr>
+		<th>Function</th>
+		<th>Use</th>
+	</tr>
+	<tr>
+		<td>refresh</td>
+		<td>used to re-calculate the shadows<br />
+			$(...).loongshadow('refresh');<br />
+			It is usefull for regenerating the shadows when the window is resized.
+		</td>
+	</tr>
+	<tr>
+		<td>option</td>
+		<td>Get or set an option value<br />
+			Getter : $(...).loongshadow('option', 'optionName');<br />
+			Setter : $(...).loongshadow('option', 'optionName', 'value');<br /><br>
+			The refresh method is automaticaly called when an option is set.
+		</td>
+	</tr>
+	<tr>
+		<td>destroy</td>
+		<td>Destroys all the shadows and remove them from the DOM<br />
+			$(...).loongshadow('destroy');			
+		</td>
+	</tr>
+</table>
+
+==========
+
+<h3>Tip :</h3>
+<p>It can be usefull to set the overflow-x property of the body in your CSS to prevent the shadows to make a horizontal scrollbar appear.</p>
+<pre>body {overflow-x:hidden;}</pre>
