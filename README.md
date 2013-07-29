@@ -34,3 +34,44 @@ $(document).ready(function(){
 	$('.shadowed').loongshadow('refresh');
 });
 </pre>
+
+============
+
+Options :
+
+<table>
+	<tr>
+		<th>Option</th>
+		<th>Description</th>
+		<th>Default</th>
+	</tr>
+	<tr>
+		<td>rotation</td>
+		<td>(int) The angle of the shadow. 0 is to the right. (between 0 and 360)</td>
+		<td>45</td>
+	</tr>
+	<tr>
+		<td>lenght</td>
+		<td>(int) The lenght of the shadow</td>
+		<td>200</td>
+	</tr>
+	<tr>
+		<td>baseOpacity</td>
+		<td>(float) The shadow opacity at the start (between 0.0 and 1.0)</td>
+		<td>0.3</td>
+	</tr>
+	<tr>
+		<td>darken</td>
+		<td>(int) How much should the plugin darken the start color ? (between 0 and 100)</td>
+		<td>50</td>
+	</tr>
+	<tr>
+		<td>fadeIn</td>
+		<td>(boolean) Should the shadow fade in when displayed the first time ? (true or false)</td>
+		<td>false</td>
+	</tr>
+	<tr>
+		<td>fadeTime</td>
+		<td>(int) Duration of the fadeIn en millisecons when fadeIn is set to true.</td>
+	</tr>
+</table>
